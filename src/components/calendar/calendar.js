@@ -18,9 +18,9 @@ const Calendar = () => {
                         <button className="btn btn-outline-light float-right">Adicionar</button>
                     </div>
                 </div>
-                <CalendarItem nome="Entrega do projeto" tempo_restante="1"></CalendarItem>
-                <CalendarItem nome="Pesquisar sobre Macau" tempo_restante="4"></CalendarItem>
-                <CalendarItem nome="Pagar conta de luz" tempo_restante="5"></CalendarItem>
+                <CalendarItem nome="Entrega do projeto" tempo_restante="1" id="3"></CalendarItem>
+                <CalendarItem nome="Pesquisar sobre Macau" tempo_restante="4" id="4"></CalendarItem>
+                <CalendarItem nome="Pagar conta de luz" tempo_restante="5" id="5"></CalendarItem>
             </div>
         </div>
     );

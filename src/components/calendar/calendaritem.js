@@ -5,6 +5,7 @@ class CalendarItem extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            id: props.id,
             nome: props.nome,
             tempo_restante: props.tempo_restante,
             data_fim: props.data_fim,
@@ -22,7 +23,7 @@ class CalendarItem extends React.Component {
                             <span className="align-middle -slightly-down -larger-text"><b>{this.props.nome}</b> - em {this.props.tempo_restante} dias.</span>
                         </div>
                         <div className="float-right">
-                            <button type="button" className="btn btn-outline-secondary">Editar</button>
+                            <a className="btn btn-outline-secondary" href={"./edit=" + this.props.id}>Editar</a>
                             <span className="-btn-spacing"></span>
                             <button type="button" className="btn btn-outline-danger">Deletar</button>
                         </div>

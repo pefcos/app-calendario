@@ -2,12 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Edit from './components/forms/edit';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import {abreConexao, fechaConexao} from './dbcon';
+
+const sqlite3 = require('sqlite3').verbose();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact={true} component={App} />
+      <Route path="/edit=:id" exact={true} component={Edit} />
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
