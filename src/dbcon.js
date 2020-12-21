@@ -1,3 +1,5 @@
+import sqlite3 from 'sqlite3';
+
 // Estabelece conexao com a base de dados SQLite
 export const abreConexao = () => {
     let db = new sqlite3.Database('./calendario.db', sqlite3.OPEN_READWRITE, (err) => {

@@ -4,8 +4,10 @@ import Navbar from '../navbar';
 class Edit extends React.Component {
     constructor(props) {
         super(props);
+        
     }
     render(){
+        var today = new Date().toISOString().slice(0, 10);
         return (
             <div>
                 <Navbar></Navbar>
@@ -21,11 +23,11 @@ class Edit extends React.Component {
                         <div className="row">
                             <div class="form-group col-md-6 col-sm-12">
                                 <label for="atividade">Data inicial</label>
-                                <input type="date" class="form-control" id="atividade"/>
+                                <input type="date" class="form-control" id="atividade" value={today}/>
                             </div>
                             <div class="form-group col-md-6 col-sm-12">
                                 <label for="atividade">Data final</label>
-                                <input type="date" class="form-control" id="atividade"/>
+                                <input type="date" class="form-control" id="atividade" value={today}/>
                             </div>
                         </div>
                         <div className="float-right">

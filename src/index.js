@@ -5,9 +5,6 @@ import App from './App';
 import Edit from './components/forms/edit';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
-import {abreConexao, fechaConexao} from './dbcon';
-
-const sqlite3 = require('sqlite3').verbose();
 
 ReactDOM.render(
   <BrowserRouter>
